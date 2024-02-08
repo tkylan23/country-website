@@ -1,0 +1,279 @@
+body {
+    font-family: 'EB Garamond', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBE29;
+    color: #8D153A;
+    padding: 1.5rem 2rem;
+}
+
+.header-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-container {
+    justify-content: flex-start;
+}
+
+.header-logo img {
+    max-height: 2.5rem;
+    margin-right: 1.25rem;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #8D153A;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #00534E;
+}
+
+#home {
+    padding: 2rem;
+}
+
+#section1 {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    color: #8D153A;
+}
+
+.rounded-box {
+    border-radius: .625rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #8D153A;
+}
+
+.section-content {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#attractions {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.attractions-box {
+    display: flex;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+.box-content {
+    display: flex;
+    width: 100%;
+    align-items: stretch; 
+}
+
+.attractions-image {
+    width: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.attractions-image:hover {
+    transform: scale(1.1);
+}
+
+.attractions-text {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.attractions-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.more-button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-button:hover {
+    background-color: #555; /* Adjust button hover color */
+}
+
+#food {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.food-image, .culture-image {
+    width: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.food-text, .culture-text{
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #555;
+    padding: 1.5rem;
+}
+
+.food-box {
+    display: flex;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+#culture {
+    background-color: #f0f0f0; /* Adjust the background color as per your design */
+    padding: 2rem;
+    text-align: center;
+}
+
+.culture-box {
+    display: flex;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #FFBE29;
+    color: #8D153A;
+}
+
+#section1 .section-title,
+#attractions .attractions-text h2,
+#food .food-text h2,
+#culture .culture-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #8D153A;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+    .header-title {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #home {
+        padding: 1rem;
+        padding-left: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav {
+        margin-top: 1rem;
+    }
+
+    .header-nav a {
+        margin-right: 0.5rem;
+    }
+
+    .box-content {
+        display: flex;
+        width: 100%;
+    }
+
+    .food-image {
+        width: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .food-image:hover {
+        transform: scale(1.1);
+    }
+
+    .food-text {
+        padding: 1.5rem;
+        width: 50%;
+        box-sizing: border-box;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .food-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .culture-image {
+        width: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .culture-image:hover {
+        transform: scale(1.1);
+    }
+
+    .culture-text {
+        padding: 1.5rem;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .culture-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

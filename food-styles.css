@@ -1,0 +1,191 @@
+body {
+    font-family: 'EB Garamond', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBE29;
+    color: #8D153A;
+    padding: 1.5rem 2rem;
+}
+
+.header-title, #food-intro h2, #food h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-container {
+   justify-content: flex-start;
+}
+
+.header-logo img {
+    max-height: 2.5rem;
+    margin-right: 1.25rem;
+}
+
+.header-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #8D153A;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #00534E; 
+}
+
+#food-intro, #food {
+    text-align: center;
+    padding: 2rem;
+}
+
+.rounded-box {
+    border-radius: .625rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #8D153A;
+}
+
+.section-content, .food-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#food {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.attractions-box {
+    flex: 0 0 calc(33.333% - 2rem);
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.attractions-image {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.attractions-image:hover {
+    transform: scale(1.1); 
+}
+
+.attractions-text {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.attractions-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #8D153A;
+}
+
+
+#food-intro,
+#food h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#food-intro p,
+#food .section-content {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #FFBE29;
+    color: #8D153A;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-title {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #food-intro, #food {
+        padding: 1rem;
+    }
+
+    .header-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .header-nav {
+        margin-top: 1rem;
+    }
+
+    .header-nav a {
+        margin-right: 0.5rem;
+    }
+
+    #food {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .attractions-box {
+        flex: 0 0 100%;
+    }
+}

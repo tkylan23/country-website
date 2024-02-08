@@ -1,0 +1,168 @@
+/* Include common styles if any */
+body {
+    font-family: 'EB Garamond', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBE29;
+    color: #8D153A;
+    padding: 1.5rem 2rem;
+}
+
+.header-title, #cultures-intro h2, #cultures h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    font-size: 2rem;
+    color: #8D153A;
+}
+
+.header-container {
+   justify-content: flex-start;
+}
+
+.header-logo img {
+    max-height: 2.5rem;
+    margin-right: 1.25rem;
+}
+
+.header-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #8D153A;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #00534E; 
+}
+
+#cultures-intro,
+#cultures {
+    text-align: center;
+    padding: 2rem;
+}
+
+.rounded-box {
+    border-radius: .625rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #8D153A;
+}
+
+.section-content, .cultures-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#cultures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cultures-box {
+    flex: 0 0 calc(33.333% - 2rem);
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.1);
+}
+
+.cultures-image {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cultures-image:hover {
+    transform: scale(1.1);
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cultures-text {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.culture-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #FFBE29;
+    color: #8D153A;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .header-title {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #cultures-intro, #cultures {
+        padding: 1rem;
+    }
+
+    .header-nav {
+        margin-top: 1rem;
+    }
+
+    .header-nav a {
+        margin-right: 0.5rem;
+    }
+
+    #cultures {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .cultures-box {
+        flex: 0 0 100%;
+    }
+}
