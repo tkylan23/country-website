@@ -110,6 +110,61 @@ header {
     font-family: 'Playfair Display', sans-serif;
 }
 
+#contact-form {
+    text-align: center;
+    padding: 2rem;
+}
+
+#contact-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #555; /* Adjust button hover color */
+}
+
+/* Styling for the toggle button */
+.toggle-button {
+    display: block;
+    width: 150px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #555; /* Adjust button hover color */
+}
+
+/* Styling for the checkbox (hidden) */
+#toggle-contact-form {
+    display: none;
+}
+
+/* Styling for the form when the checkbox is checked */
+#toggle-contact-form:checked + .rounded-box {
+    display: block;
+}
+
 
 footer {
     text-align: center;
