@@ -1,4 +1,4 @@
-/* Common styles for all webpages */
+/* common styles for all pages */
 
 body {
     font-family: 'EB Garamond', sans-serif;
@@ -73,7 +73,6 @@ header {
     margin-bottom: 1rem;
 }
 
-/* Additional common styles as needed */
 
 footer {
     text-align: center;
@@ -82,13 +81,12 @@ footer {
     color: #8D153A;
 }
 
-/* Media Query for Responsive Design */
+/* mobile */
 
 @media screen and (max-width: 768px) {
-    /* Responsive styles for smaller screens */
     .title, .source {
         font-size: 0.9rem;
     }
 }
 
-/* Include specific stylesheets for each webpage if needed */
+

@@ -1,4 +1,3 @@
-/* Include common styles if any */
 body {
     font-family: 'EB Garamond', sans-serif;
     margin: 0;
@@ -14,7 +13,8 @@ header {
     padding: 1.5rem 2rem;
 }
 
-.header-title, #credits-intro h2, #credits h2 {
+.header-title, 
+#credits-intro h2, #credits h2 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
@@ -83,6 +83,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     padding: 2rem;
+    
 }
 
 .credits-box {
@@ -106,7 +107,7 @@ header {
 }
 
 .title {
-    color: #8D153A; /* Reddish font color */
+    color: #8D153A;
     font-family: 'Playfair Display', sans-serif;
 }
 
@@ -134,10 +135,10 @@ header {
 }
 
 #contact-form button:hover {
-    background-color: #555; /* Adjust button hover color */
+    background-color: #555;
 }
 
-/* Styling for the toggle button */
+/*  button for contact */
 .toggle-button {
     display: block;
     width: 150px;
@@ -152,15 +153,14 @@ header {
 }
 
 .toggle-button:hover {
-    background-color: #555; /* Adjust button hover color */
+    background-color: #555; 
 }
 
-/* Styling for the checkbox (hidden) */
 #toggle-contact-form {
     display: none;
 }
 
-/* Styling for the form when the checkbox is checked */
+
 #toggle-contact-form:checked + .rounded-box {
     display: block;
 }
@@ -174,7 +174,7 @@ footer {
     margin-top: 3rem;
 }
 
-/* Media Query for Responsive Design */
+/* mobile */
 
 @media screen and (max-width: 768px) {
     .title, .source {

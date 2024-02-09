@@ -81,7 +81,7 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+/* got the calculation from AI */
 .attractions-box {
     flex: 0 0 calc(33.333% - 2rem);
     margin: 1rem;
@@ -117,12 +117,12 @@ footer {
     background-color: #FFBE29;
     color: #8D153A;
 }
-
+/* below line from ai */
 #contactButton:hover::before {
     transform: translate3d(100%, 0, 0);
 }
 
-/* Media Queries for Responsive Design */
+/* mobile */
 
 @media screen and (max-width: 768px) {
     header {
